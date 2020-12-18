@@ -1,0 +1,72 @@
+.header{
+    background-color:black;
+    display:flex;
+    align-items:center;
+    position:sticky;
+    top:1;     /* making the nav bar stick to the top */
+    z-index: 100;      /* ensuring nothing comes above the header */
+ 
+
+
+    
+}
+.header_logo{
+    width:100px;
+    object-fit:contain;/* so amazon logo will always look right and never weird*/
+    margin-left:20px;
+    margin-right:20px;  
+    margin-top: 18px; 
+}
+
+.header_optionBasket{ 
+    display:flex;
+    align-items: center;
+}
+
+.header_basketCount{
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+.header__link{
+    color:white;
+    text-decoration: none;
+}
+
+
+.header__nav{
+    display: flex;
+    justify-content:space-evenly;
+  
+    
+}
+
+.header__option{
+    display:flex;
+    flex-direction: column;/* puts options in columns */
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+
+.header__optionLineTwo{
+    font-size:13px;
+    font-weight:800;
+}
+.header__searchIcon {
+    background-color:orange;
+    padding:5px;
+    height:22px !important;
+
+}
+.header__search{
+    display:flex;
+    flex:1; /* flex 1 tells the search div to take priority in terms of space */
+}
+
+.header__searchInput{
+    height:12px;
+    padding:10px;
+    border:none;
+    width:100%;
+}
