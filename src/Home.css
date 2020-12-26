@@ -6,8 +6,15 @@
 .home_image{
     width:100%; 
     mask-image:linear-gradient(to bottom,rgb(198, 122, 1),rgba(122, 122, 122, 0));/* top has opacity and bottom has lower opacity (1 and 0) */
- 
+    z-index:-1;
+    margin-bottom:-120px;     /* deletes spacing from bottom to move image up*/
 
 }
 
+.home_row{
+    display:flex;
+    z-index:1; 
+    margin-left:5px;
+    margin-right:5px;
+}
 /* class based component vs functional based */
