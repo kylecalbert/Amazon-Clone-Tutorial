@@ -2,5 +2,19 @@
     width:100%;
     margin-bottom:10px;     /* puts space under bottom of ad */
 
+}
 
+.checkout{
+    display:flex;
+    /* height:max-content;
+    padding:20px;
+    background-color:white; */
+} 
+
+
+
+.checkout_title{
+    margin-right:10px;
+    padding:10px;
+    border-bottom: 1px solid lightgray;
 }
