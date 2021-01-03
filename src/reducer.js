@@ -1,5 +1,6 @@
 export const initialState = {
     basket:[],
+    user:null,
 
 };
 
@@ -14,7 +15,13 @@ export const getBasketTotal = (basket) =>
 function reducer(state,action){
     console.log(action);
 
-    switch(action.type){
+    switch(action.type){ //update user when they log in/out
+
+        case 'SET_USER':
+            return{
+                ...state, user:action.user  ///sets user to authenticated user name 
+
+            }
         case 'ADD_TO_BASKET':
             //Logic for adding item to basket
          return{
